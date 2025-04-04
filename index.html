@@ -21,7 +21,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#"
+      <a class="navbar-brand" href="https://fvt.co.za/"
         ><span class="red-letters">FVT</span> Architecture</a
       >
       <button
@@ -39,9 +39,9 @@
         class="collapse navbar-collapse justify-content-end"
         id="navbarNavDropdown"
       >
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" id="home-btn">Home</a>
+        <ul class="navbar-nav cursor-pointer">
+          <li class="nav-item">
+            <a class="nav-link red-letters" id="home-btn">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="about-btn">About</a>
@@ -127,25 +127,87 @@
           </p>
         </div>
       </div>
+      <div
+        class="alert alert-danger alert-dismissible fade show mx-5"
+        role="alert"
+      >
+        <strong>Want to get in contact?</strong> You should check check out our
+        <a href="#" class="alert-link"
+          ><span id="contact-btn-bottom"><u>Contact Page</u></span></a
+        >
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
     </div>
 
-    <div id="about-page" class="about-page"></div>
+    <div id="about-page" class="about-page">
+      <div class="container-fluid text-center">
+        <div class="image-container">
+          <img src="./assets/Her3.jpg" class="img-fluid" alt="Image" />
+          <h2 class="heading-over-image">
+            <span class="red-letters">About</span>
+          </h2>
+        </div>
+        <p class="mx-2 mt-4">
+          Francois van Tonder embarked on his architectural journey in
+          <span class="red-letters">1999</span>, venturing into the realm of
+          small-scale design projects as an independent consultant.
+          Simultaneously, he assumed the esteemed role of a part-time lecturer,
+          imparting his knowledge and expertise in
+          <span class="red-letters">Computer-Aided Design (CAD)</span> to eager
+          minds at the distinguished
+          <span class="red-letters">Technikon Pretoria</span>. His passion for
+          education extended beyond the Department of Architecture, as he
+          dedicated five years to enlightening students in the intricate field
+          of <span class="red-letters">Horticulture</span> at the same revered
+          institution. Furthermore, during the period of
+          <span class="red-letters">2012-2013</span>, Francois served as a
+          lecturer at the
+          <span class="red-letters">Inscape Education Group</span>, where he
+          adeptly transmitted the intricacies of architectural draughting and
+          architectural technology.
+        </p>
+        <hr />
+        <h2>Qualifications</h2>
+        <p class="mx-2 mt-4 mb-0">
+          With a <span class="red-letters">B-Tech</span> degree in
+          <span class="red-letters">Architectural Technology</span>,
+          specializing in management, Francois van Tonder stands as a beacon of
+          proficiency and competence in his field. He now assumes the role of a
+          Professional Senior Architectural Technologist, spearheading FVT
+          Architecture as its sole practitioner. Possessing a profound
+          understanding of architectural principles and a keen eye for detail,
+          Francois skillfully navigates the complex intricacies of his craft,
+          crafting spaces that harmoniously blend
+          <span class="red-letters">functionality and aesthetic</span> appeal.
+        </p>
+      </div>
+    </div>
 
     <div id="services-page" class="services-page"></div>
 
     <div id="projects-page" class="projects-page"></div>
 
-    <div id="contact-page" class="contact-page"></div>
+    <div id="contact-page" class="contact-page">
+      
+    </div>
 
     <!--Bottom bar-->
 
     <div class="bottom-bar container-fluid black-background py-5 text-center">
-      <h3>
-        <span class="red-letters">FVT</span> Architecture © All Rights Reserved
-      </h3>
-      <hr />
-      <p>Professional Senior Architectural Technologist</p>
-      <p>Architectural Solutions</p>
+      <hr class="mt-0" />
+      <h3><span class="red-letters">FVT</span> Architecture ©</h3>
+      <h3 class="my-2">All Rights Reserved</h3>
+      <div class="no-justify my-4">
+        <p>Professional Senior Architectural Technologist</p>
+        <p class="red-letters">Architectural Solutions</p>
+      </div>
     </div>
 
     <script

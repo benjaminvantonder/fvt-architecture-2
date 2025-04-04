@@ -1,7 +1,16 @@
 body {
   background-color: #343a40;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(180, 180, 180);
+  color: white; /*rgb(180, 180, 180)*/
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word; /* ensures space is added between words, not letters */
+}
+
+.no-justify p {
+  text-align: center;
 }
 
 .hide {
@@ -9,13 +18,17 @@ body {
   display: none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .red-letters {
-  color: rgb(232, 96, 96);
+  color: rgb(232, 96, 96) !important;
 }
 
 .black-background {
   background-color: #343a40;
-  color: rgb(180, 180, 180);
+  color: white;
 }
 
 hr {
@@ -48,4 +61,33 @@ hr {
 
 #column-image1 {
   border-radius: 10px;
+}
+
+#about-page .container-fluid {
+  position: relative; /* To contain the absolute positioning of the heading */
+}
+
+#about-page .image-container {
+  position: relative;
+}
+
+#about-page img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Remove any extra space around the image */
+  border-radius: 5px;
+}
+
+#about-page .heading-over-image {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offset the element by half its size to truly center it */
+  color: white; /* Make text white for contrast */
+  font-size: 3rem; /* Adjust the heading size */
+  font-weight: bold;
+  z-index: 1; /* Ensure the heading is above the image */
 }
