@@ -6,6 +6,7 @@ let Services_Btn = document.getElementById("services-btn");
 let Projects_Btn = document.getElementById("projects-btn");
 let Contact_Btn = document.getElementById("contact-btn");
 let Contact_Btn_Bottom = document.getElementById("contact-btn-bottom");
+let Contact_Btn_Servives = document.getElementById("contact-btn-services");
 
 // now let's link the ids of the pages
 
@@ -127,6 +128,20 @@ Contact_Btn_Bottom.addEventListener("click", function () {
   Contact_Page.classList.remove("hide");
 
   NavbarDropdown.classList.remove("show");
+
+  Home_Btn.classList.remove("red-letters");
+  About_Btn.classList.remove("red-letters");
+  Services_Btn.classList.remove("red-letters");
+  Projects_Btn.classList.remove("red-letters");
+  Contact_Btn.classList.add("red-letters");
+});
+
+Contact_Btn_Servives.addEventListener("click", function () {
+  Home_Page.classList.add("hide");
+  About_Page.classList.add("hide");
+  Services_Page.classList.add("hide");
+  Projects_Page.classList.add("hide");
+  Contact_Page.classList.remove("hide");
 
   Home_Btn.classList.remove("red-letters");
   About_Btn.classList.remove("red-letters");
