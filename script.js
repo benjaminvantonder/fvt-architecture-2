@@ -6,7 +6,7 @@ let Services_Btn = document.getElementById("services-btn");
 let Projects_Btn = document.getElementById("projects-btn");
 let Contact_Btn = document.getElementById("contact-btn");
 let Contact_Btn_Bottom = document.getElementById("contact-btn-bottom");
-let Contact_Btn_Servives = document.getElementById("contact-btn-services");
+let Contact_Btn_Services = document.getElementById("contact-btn-services");
 
 // now let's link the ids of the pages
 
@@ -136,7 +136,7 @@ Contact_Btn_Bottom.addEventListener("click", function () {
   Contact_Btn.classList.add("red-letters");
 });
 
-Contact_Btn_Servives.addEventListener("click", function () {
+Contact_Btn_Services.addEventListener("click", function () {
   Home_Page.classList.add("hide");
   About_Page.classList.add("hide");
   Services_Page.classList.add("hide");
